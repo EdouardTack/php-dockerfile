@@ -5,7 +5,7 @@ RUN apt-get update -q
 
 RUN apt-get install software-properties-common -qqy
 
-RUN add-apt-repository ppa:ondrej/php -qqy
+RUN add-apt-repository ppa:ondrej/php -y
 
 RUN apt-get install -qqy \
     php7.2-mcrypt \
