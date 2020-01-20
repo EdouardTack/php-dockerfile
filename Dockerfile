@@ -9,3 +9,6 @@ RUN apt-get update -q && apt-get install -qqy \
     && docker-php-ext-install xml \
     && docker-php-ext-install intl && \
     rm -rf /var/lib/apt/lists/*
+
+EXPOSE 9000
+CMD ["php-fpm"]
