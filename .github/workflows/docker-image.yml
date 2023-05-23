@@ -24,7 +24,7 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Build and push
-      uses: docker/build-push-action@v6
+      uses: mr-smithers-excellent/docker-build-push@v6
       with:
         image: tackacoder/php
         push: true
